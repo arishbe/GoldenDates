@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GoldenDates.DeleteItem">
+    <StackLayout>
+        <Image Source="GD.png" HeightRequest="120" WidthRequest="120" FlexLayout.AlignSelf="Center" BackgroundColor="Transparent" />
+        <Label Text="Eliminar Producto" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" FontSize="Title"/>
+        <Label Text="Ingresa el identificador del producto que deseas eliminar " FontAttributes="Bold" FontSize="Medium" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"/>
+
+        <Label Text="Identificador de Producto" TextColor="Black" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+        <Entry x:Name="txtitemid" Placeholder="Identificador de producto"></Entry>
+        <Button x:Name="btnDeleteItem" Text="Eliminar Producto" Clicked="btnDeleteItem_Clicked" BackgroundColor="Beige"></Button>
+    </StackLayout>
+</ContentPage>

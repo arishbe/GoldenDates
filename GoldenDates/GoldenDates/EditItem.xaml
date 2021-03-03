@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GoldenDates.EditItem">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="GD.png" HeightRequest="80" WidthRequest="80" FlexLayout.AlignSelf="Center" BackgroundColor="Transparent" />
+            <Label Text="Editar Productos" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" FontSize="Title"/>
+            <Label Text="Ingresa la nueva información del producto" FontAttributes="Bold" FontSize="Medium" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"/>
+
+            <Label Text="Identificador de producto" TextColor="Black" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtitemid" Placeholder="Identificador del producto" IsEnabled="False"></Entry>
+            <Label Text="Descripcion" TextColor="Black" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtdescriptionItem" Placeholder="Descripcion del producto" ></Entry>
+            <Label Text="Cantidad" TextColor="Black" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtQuantity" Placeholder="Cantidad" Keyboard="Numeric"></Entry>
+            <Label Text="Stock Minimo" TextColor="Black" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtstockmin" Placeholder="Piezas Minimas" Keyboard="Numeric"></Entry>
+            <Label Text="Stock Maximo" TextColor="Black" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtstockmax" Placeholder="Piezas Maximas" Keyboard="Numeric"></Entry>
+            <Button Text="Editar Producto" x:Name="btnEditItem" Clicked="btnEditItem_Clicked" BackgroundColor="Beige"></Button>
+            <Button x:Name="btnDeleteItem" Text="Eliminar Producto" Clicked="btnDeleteItem_Clicked" BackgroundColor="Beige"></Button>
+           
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

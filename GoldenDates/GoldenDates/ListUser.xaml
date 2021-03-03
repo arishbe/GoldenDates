@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GoldenDates.ListUser">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="LISTA DE USUARIOS" FontAttributes="Bold"
+                   Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" HorizontalTextAlignment="Center" FontSize="Title"/>
+
+            <ListView 
+            x:Name="lvUsers"
+            HasUnevenRows="True"
+                ItemTapped="lvUsers_ItemTapped"
+                SelectedItem="{Binding}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="10">
+                                <Label
+                                Text= "{ Binding userid}">
+                                </Label>
+                                <Label
+                                Text="{Binding username}">
+                                </Label>
+                                <Label
+                                Text="{Binding password}">
+                                </Label>
+                                <Label
+                                Text="{Binding name}">
+                                </Label>
+                                <Label
+                                Text="{Binding lastname}">
+                                </Label>
+                                <Label
+                                Text="{Binding birthday}">
+                                </Label>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Button
+            x:Name="btnAgregarUsuarioUser"
+            Clicked="btnAgregarUsuarioUser_Clicked"
+            Text="Agregar"
+                WidthRequest="100">
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

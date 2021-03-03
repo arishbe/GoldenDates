@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GoldenDates.DeleteUser">
+    <StackLayout>
+        <Image Source="GD.png" HeightRequest="120" WidthRequest="120" FlexLayout.AlignSelf="Center" BackgroundColor="Transparent" />
+        <Label Text="Eliminar usuario" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" FontSize="Title"/>
+        <Label Text="Ingresa el identificador del usuario que deseas eliminar " FontAttributes="Bold" FontSize="Medium" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"/>
+
+        <Label Text="Identificador de Usuarios" TextColor="Black" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+        <Entry x:Name="txtuserdid" Placeholder="Identificador del Usuario"></Entry>
+        <Button x:Name="btnDeleteUsers" Text="Eliminar Usuario" Clicked="btnDeleteUsers_Clicked" BackgroundColor="Beige"></Button>
+    </StackLayout>
+</ContentPage>

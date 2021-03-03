@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GoldenDates.AddUser">
+    <StackLayout>
+        <Image Source="GD.png" HeightRequest="120" WidthRequest="120" FlexLayout.AlignSelf="Center" BackgroundColor="Transparent" />
+        <Label Text="Registro de usuario" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" FontSize="Title"/>
+        <Label Text="Ingresa la información del usuario" FontAttributes="Bold" FontSize="Medium" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"/>
+
+        <Label Text="Usuario" TextColor="Black" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+        <Entry x:Name="txtUsername" Placeholder="Ingresa tu usuario"></Entry>
+        <Label Text="Contraseña"  TextColor="Black" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+        <Entry x:Name="txtPassword" IsPassword="True" Placeholder="Ingresa tu contraseña"></Entry>
+        <Label Text="Nombre" TextColor="Black" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+        <Entry x:Name="txtName" Placeholder="Nombre"></Entry>
+        <Label Text="Apellido" TextColor="Black" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+        <Entry x:Name="txtLastname" Placeholder="Apellido"></Entry>
+        <Label Text="Fecha de nacimiento" TextColor="Black" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+        <DatePicker x:Name="txtBirtday"></DatePicker>
+        <Button x:Name ="btnAddUsers" Text="Agregar Usuario" Clicked="btnAddUsers_Clicked" BackgroundColor="Beige"></Button>
+       
+
+    </StackLayout>
+</ContentPage>

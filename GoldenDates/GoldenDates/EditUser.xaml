@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GoldenDates.EditUser">
+    <ScrollView>
+        <StackLayout>
+            
+            <Label Text="Editar usuario" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" FontSize="Title"/>
+            <Label Text="Ingresa la nueva información del usuario" FontAttributes="Bold" FontSize="Medium" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"/>
+
+            <Label Text="Identificador de Usuario" TextColor="Black" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtUserId" Placeholder="UserId" IsEnabled="False"></Entry>
+            <Label Text="Usuario" TextColor="Black" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtUsername" Placeholder="Username"></Entry>
+            <Label Text="Contraseña"  TextColor="Black" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtPassword" IsPassword="True" Placeholder="Password"></Entry>
+            <Label Text="Nombre" TextColor="Black" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtName" Placeholder="Name"></Entry>
+            <Label Text="Apellido" TextColor="Black" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtLastname" Placeholder="Last Name"></Entry>
+            <Label Text="Fecha de nacimiento" TextColor="Black" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+            <DatePicker x:Name="txtBirtday"></DatePicker>
+            <Button x:Name="btnEditUser" Text="Editar Usuario" Clicked="btnEditUser_Clicked" BackgroundColor="Beige"></Button>
+            <Button x:Name="btnDeleteUsers" Text="Eliminar Usuario" Clicked="btnDeleteUsers_Clicked" BackgroundColor="Beige"></Button>
+            <Image Source="GD.png" HeightRequest="120" WidthRequest="120" FlexLayout.AlignSelf="Center" BackgroundColor="Transparent" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
