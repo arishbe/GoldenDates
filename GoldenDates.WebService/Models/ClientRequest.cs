@@ -17,7 +17,7 @@ namespace GoldenDates.WebService.Models
 
     public class ClientResponse
     {
-        public int id_cli { get; set; }
+   //     public int id_cli { get; set; }
     }
 
 
