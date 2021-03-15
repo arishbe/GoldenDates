@@ -9,7 +9,7 @@ namespace GoldenDates
 {
     class Api
     {
-        const string apiPath = "";
+        const string apiPath = "http://arishbebanuelos-001-site1.gtempurl.com/";
 
         #region LOGIN
         public async Task<LoginResponse> Login(LoginRequest _loginRequest)
