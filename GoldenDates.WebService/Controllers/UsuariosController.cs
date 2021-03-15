@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace GoldenDates.WebService.Controllers
@@ -15,7 +14,7 @@ namespace GoldenDates.WebService.Controllers
         {
 
             var _LoginResponse = new LoginResponse();
-            using (var bd = new bdgoldendatesEntities())
+            using (var bd = new bdgoldendatesEntities1())
             {
                 var usuario = bd.Usuarios.Where(w => w.username == _userData.username && w.password == _userData.password).FirstOrDefault();
                 if (usuario != null)
@@ -33,9 +32,9 @@ namespace GoldenDates.WebService.Controllers
         public JsonResult AddUsers(UserRequest _userRequest)
         {
             var _userResponse = new UserResponse();
-            using (var bd = new bdgoldendatesEntities())
+            using (var bd = new bdgoldendatesEntities1())
             {
-                var user = new Usuarios();
+                var user = new Usuario();
                 user.username = _userRequest.username;
                 user.password = _userRequest.password;
                 user.nombre = _userRequest.nombre;
@@ -58,7 +57,7 @@ namespace GoldenDates.WebService.Controllers
         public JsonResult EditUsers(UserRequest _userRequest)
         {
             var _userResponse = new UserResponse();
-            using (var bd = new bdgoldendatesEntities())
+            using (var bd = new bdgoldendatesEntities1())
             {
                 var user = bd.Usuarios.Where(w => w.id_user == _userRequest.id_user).FirstOrDefault();
 
@@ -67,7 +66,7 @@ namespace GoldenDates.WebService.Controllers
                 user.nombre = _userRequest.nombre;
                 user.apelllido = _userRequest.apellido;
                 user.birthday = _userRequest.birthday;
-                //user.birthday = DateTime.Now;
+                user.birthday = DateTime.Now;
                 user.IsActive = true;
                 user.FechaRegistro = DateTime.Now;
 
@@ -84,8 +83,8 @@ namespace GoldenDates.WebService.Controllers
         public JsonResult ListUsers()
         {
             //var _userResponse = new UserResponse();
-            var user = new List<Usuarios>();
-            using (var bd = new bdgoldendatesEntities())
+            var user = new List<Usuario>();
+            using (var bd = new bdgoldendatesEntities1())
             {
                 user = bd.Usuarios.ToList();
             }
@@ -95,12 +94,12 @@ namespace GoldenDates.WebService.Controllers
 
         //CONSULTAR
         [HttpGet]
-        public JsonResult GetUser(int userid)
+        public JsonResult GetUser(int id_user)
         {
-            var user = new Usuarios();
-            using (var bd = new bdgoldendatesEntities())
+            var user = new Usuario();
+            using (var bd = new bdgoldendatesEntities1())
             {
-                user = bd.Usuarios.Where(w => w.id_user == userid).FirstOrDefault();
+                user = bd.Usuarios.Where(w => w.id_user == id_user).FirstOrDefault();
             }
 
             return Json(user, JsonRequestBehavior.AllowGet);
@@ -111,7 +110,7 @@ namespace GoldenDates.WebService.Controllers
         public JsonResult DeleteUser(int id_user)
         {
             bool result = false;
-            using (var bd = new bdgoldendatesEntities())
+            using (var bd = new bdgoldendatesEntities1())
             {
                 try
                 {

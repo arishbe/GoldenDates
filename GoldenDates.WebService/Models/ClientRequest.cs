@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace GoldenDates.WebService.Models
+﻿namespace GoldenDates.WebService.Models
 {
     public class ClientRequest
 
@@ -17,7 +12,7 @@ namespace GoldenDates.WebService.Models
 
     public class ClientResponse
     {
-   //     public int id_cli { get; set; }
+        public int id_cli { get; set; }
     }
 
 

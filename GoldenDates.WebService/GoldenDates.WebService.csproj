@@ -170,32 +170,32 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Clientes.cs">
-      <DependentUpon>GOLDENDATES_MODEL.tt</DependentUpon>
+    <Compile Include="Models\Cliente.cs">
+      <DependentUpon>GDModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ClientRequest.cs" />
-    <Compile Include="Models\GOLDENDATES_MODEL.Context.cs">
+    <Compile Include="Models\GDModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>GOLDENDATES_MODEL.Context.tt</DependentUpon>
+      <DependentUpon>GDModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GOLDENDATES_MODEL.cs">
+    <Compile Include="Models\GDModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>GOLDENDATES_MODEL.tt</DependentUpon>
+      <DependentUpon>GDModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\GOLDENDATES_MODEL.Designer.cs">
+    <Compile Include="Models\GDModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>GOLDENDATES_MODEL.edmx</DependentUpon>
+      <DependentUpon>GDModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Producto.cs">
+      <DependentUpon>GDModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ProductoRequest.cs" />
-    <Compile Include="Models\Productos.cs">
-      <DependentUpon>GOLDENDATES_MODEL.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\UserRequest.cs" />
-    <Compile Include="Models\Usuarios.cs">
-      <DependentUpon>GOLDENDATES_MODEL.tt</DependentUpon>
+    <Compile Include="Models\Usuario.cs">
+      <DependentUpon>GDModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -208,15 +208,15 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Models\GOLDENDATES_MODEL.Context.tt">
+    <Content Include="Models\GDModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>GOLDENDATES_MODEL.Context.cs</LastGenOutput>
-      <DependentUpon>GOLDENDATES_MODEL.edmx</DependentUpon>
+      <DependentUpon>GDModel.edmx</DependentUpon>
+      <LastGenOutput>GDModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\GOLDENDATES_MODEL.tt">
+    <Content Include="Models\GDModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>GOLDENDATES_MODEL.edmx</DependentUpon>
-      <LastGenOutput>GOLDENDATES_MODEL.cs</LastGenOutput>
+      <DependentUpon>GDModel.edmx</DependentUpon>
+      <LastGenOutput>GDModel.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -239,13 +239,16 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <EntityDeploy Include="Models\GOLDENDATES_MODEL.edmx">
+    <Content Include="libman.json" />
+    <EntityDeploy Include="Models\GDModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>GOLDENDATES_MODEL.Designer.cs</LastGenOutput>
+      <LastGenOutput>GDModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\GOLDENDATES_MODEL.edmx.diagram">
-      <DependentUpon>GOLDENDATES_MODEL.edmx</DependentUpon>
+    <Content Include="Models\GDModel.edmx.diagram">
+      <DependentUpon>GDModel.edmx</DependentUpon>
     </Content>
+    <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\IISProfile1.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

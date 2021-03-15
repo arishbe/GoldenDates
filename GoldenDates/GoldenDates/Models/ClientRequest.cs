@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace GoldenDates.Models
+﻿namespace GoldenDates.Models
 {
     public class ClientRequest
     {

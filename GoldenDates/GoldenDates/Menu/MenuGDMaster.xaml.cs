@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -36,7 +31,7 @@ namespace GoldenDates.Menu
                     new MenuGDMasterMenuItem { Id = 0, Title = "Listado de Usuarios", TargetType = typeof (ListUser) },
                     new MenuGDMasterMenuItem { Id = 1, Title = "Listado de Productos", TargetType = typeof (ListItem)},
                     new MenuGDMasterMenuItem { Id = 2, Title = "Listado de Clientes", TargetType = typeof (ListClient)  },
-                   
+
                 });
             }
 

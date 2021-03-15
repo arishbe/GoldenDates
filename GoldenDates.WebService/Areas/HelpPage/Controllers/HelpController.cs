@@ -1,8 +1,8 @@
+using GoldenDates.WebService.Areas.HelpPage.ModelDescriptions;
+using GoldenDates.WebService.Areas.HelpPage.Models;
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using GoldenDates.WebService.Areas.HelpPage.ModelDescriptions;
-using GoldenDates.WebService.Areas.HelpPage.Models;
 
 namespace GoldenDates.WebService.Areas.HelpPage.Controllers
 {

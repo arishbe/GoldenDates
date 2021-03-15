@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -27,7 +23,7 @@ namespace GoldenDates
                 cantidad = int.Parse(txtQuantity.Text),
                 stockmin = int.Parse(txtstockmin.Text),
                 stockmax = int.Parse(txtstockmax.Text),
-              
+
 
             });
             await Navigation.PopAsync();

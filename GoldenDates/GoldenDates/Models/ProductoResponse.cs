@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace GoldenDates.Models
+﻿namespace GoldenDates.Models
 {
-   public class ProductoResponse
+    public class ProductoResponse
     {
         public int id_prod { get; set; }
         public string description { get; set; }

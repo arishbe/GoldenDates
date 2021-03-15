@@ -1,8 +1,8 @@
+using GoldenDates.WebService.Areas.HelpPage.ModelDescriptions;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Net.Http.Headers;
 using System.Web.Http.Description;
-using GoldenDates.WebService.Areas.HelpPage.ModelDescriptions;
 
 namespace GoldenDates.WebService.Areas.HelpPage.Models
 {

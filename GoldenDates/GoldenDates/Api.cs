@@ -216,7 +216,7 @@ namespace GoldenDates
             json.Add("cantidad", _productoRequest.cantidad);
             json.Add("stockmin", _productoRequest.stockmin);
             json.Add("stockmax", _productoRequest.stockmax);
-          
+
 
             var client = new RestClient(apiPath);
             var request = new RestRequest("Productos/AddItems", Method.POST);
@@ -378,7 +378,7 @@ namespace GoldenDates
             json.Add("apellido", _clientRequest.apellido);
             json.Add("telefono", _clientRequest.telefono);
             json.Add("direccion", _clientRequest.direccion);
-            
+
 
             var client = new RestClient(apiPath);
             var request = new RestRequest("Clientes/AddClient", Method.POST);

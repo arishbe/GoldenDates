@@ -1,10 +1,5 @@
-﻿using System;
-using GoldenDates.Models;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using GoldenDates.Models;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -39,7 +34,7 @@ namespace GoldenDates
                 cantidad = int.Parse(txtQuantity.Text),
                 stockmin = int.Parse(txtstockmin.Text),
                 stockmax = int.Parse(txtstockmax.Text),
-            
+
             });
             await Navigation.PopAsync();
 
@@ -50,7 +45,7 @@ namespace GoldenDates
         {
             var deleteItem = await _api.DeleteItem(new Models.ProductoRequest()
             {
-               id_prod = int.Parse(txtitemid.Text)
+                id_prod = int.Parse(txtitemid.Text)
             });
             await Navigation.PopAsync();
             if (deleteItem)
