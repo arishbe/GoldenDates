@@ -2,11 +2,26 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GoldenDates.EditClient">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+ 
+        <ScrollView>
+            <StackLayout>
+            <Label Text="Editar usuario" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" FontSize="Title"/>
+            <Label Text="Ingresa la nueva información del Cliente" FontAttributes="Bold" FontSize="Medium" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"/>
+            
+                <Label Text="Identificador de Cliente" TextColor="Black" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtidcli" Placeholder="Identificador" IsEnabled="False"></Entry>
+            <Label Text="Nombre" TextColor="Black" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+        <Entry x:Name="txtNombre" Placeholder="Nombre"></Entry>
+        <Label Text="Apellido" TextColor="Black" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+        <Entry x:Name="txtApellido" Placeholder="Apellido"></Entry>
+        <Label Text="Telefono" TextColor="Black" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+        <Entry x:Name="txtTelefono" Placeholder="Telefono"></Entry>
+        <Label Text="Direccion" TextColor="Black" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+        <Entry x:Name="txtDireccion"  Placeholder="Direccion"></Entry>
+        <Button x:Name ="btnEditClient" Text="Agregar Cliente" Clicked="btnEditClient_Clicked" BackgroundColor="Beige"></Button>
+            <Button x:Name="btnDeleteClient" Text="Eliminar Cliente" Clicked="btnDeleteClient_Clicked" BackgroundColor="Beige"></Button>
+            <Image Source="GD.png" HeightRequest="120" WidthRequest="120" FlexLayout.AlignSelf="Center" BackgroundColor="Transparent" />
+
         </StackLayout>
-    </ContentPage.Content>
+    </ScrollView>
 </ContentPage>

@@ -8,6 +8,7 @@
             <Label Text="Editar usuario" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" FontSize="Title"/>
             <Label Text="Ingresa la nueva información del usuario" FontAttributes="Bold" FontSize="Medium" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"/>
 
+           
             <Label Text="Identificador de Usuario" TextColor="Black" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
             <Entry x:Name="txtUserId" Placeholder="UserId" IsEnabled="False"></Entry>
             <Label Text="Usuario" TextColor="Black" FontAttributes="Italic" HorizontalTextAlignment="Center"/>

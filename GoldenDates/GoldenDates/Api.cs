@@ -19,7 +19,7 @@ namespace GoldenDates
             json.Add("username", _loginRequest.username);
             json.Add("password", _loginRequest.password);
             var client = new RestClient(apiPath);
-            var request = new RestRequest("Ususarios/LoginUsers", Method.POST);
+            var request = new RestRequest("Usuarios/LoginUsers", Method.POST);
             request.AddJsonBody(JsonConvert.SerializeObject(json));
 
             try
@@ -211,7 +211,7 @@ namespace GoldenDates
         public async Task<ProductoResponse> AddItem(ProductoRequest _productoRequest)
         {
             var json = new Dictionary<string, object>();
-            json.Add("itemid", _productoRequest.id_prod);
+            json.Add("id_prod", _productoRequest.id_prod);
             json.Add("description", _productoRequest.description);
             json.Add("cantidad", _productoRequest.cantidad);
             json.Add("stockmin", _productoRequest.stockmin);
@@ -219,7 +219,7 @@ namespace GoldenDates
 
 
             var client = new RestClient(apiPath);
-            var request = new RestRequest("Productos/AddItems", Method.POST);
+            var request = new RestRequest("Productos/AddItem", Method.POST);
             request.AddJsonBody(JsonConvert.SerializeObject(json));
 
             try
@@ -253,7 +253,7 @@ namespace GoldenDates
             json.Add("stockmax", _productoRequest.stockmax);
 
             var client = new RestClient(apiPath);
-            var request = new RestRequest("Productos/EditItems", Method.POST);
+            var request = new RestRequest("Productos/EditItem", Method.POST);
             request.AddJsonBody(JsonConvert.SerializeObject(json));
 
             try

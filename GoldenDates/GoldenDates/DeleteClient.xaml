@@ -2,11 +2,15 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GoldenDates.DeleteClient">
-    <ContentPage.Content>
+   
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+            <Label Text="Eliminar Cliente" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" FontSize="Title"/>
+            <Label Text="Ingresa el identificador del cliente que deseas eliminar " FontAttributes="Bold" FontSize="Medium" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"/>
+
+            <Label Text="Identificador de Cliente" TextColor="Black" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtidcli" Placeholder="Identificador del Usuario"></Entry>
+            <Button x:Name="btnDeleteClient" Text="Eliminar Cliente" Clicked="btnDeleteClient_Clicked" BackgroundColor="Beige"></Button>
+            <Image Source="GD.png" HeightRequest="120" WidthRequest="120" FlexLayout.AlignSelf="Center" BackgroundColor="Transparent" />
         </StackLayout>
-    </ContentPage.Content>
 </ContentPage>

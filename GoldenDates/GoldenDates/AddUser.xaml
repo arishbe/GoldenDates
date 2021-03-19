@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GoldenDates.AddUser">
     <StackLayout>
-        <Image Source="GD.png" HeightRequest="120" WidthRequest="120" FlexLayout.AlignSelf="Center" BackgroundColor="Transparent" />
         <Label Text="Registro de usuario" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" FontSize="Title"/>
         <Label Text="Ingresa la información del usuario" FontAttributes="Bold" FontSize="Medium" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"/>
 
@@ -18,7 +17,9 @@
         <Label Text="Fecha de nacimiento" TextColor="Black" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
         <DatePicker x:Name="txtBirtday"></DatePicker>
         <Button x:Name ="btnAddUsers" Text="Agregar Usuario" Clicked="btnAddUsers_Clicked" BackgroundColor="Beige"></Button>
-       
+        <Image Source="GD.png" HeightRequest="100" WidthRequest="100" FlexLayout.AlignSelf="Center" BackgroundColor="Transparent" />
+
+
 
     </StackLayout>
 </ContentPage>

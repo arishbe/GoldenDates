@@ -1,5 +1,9 @@
 ﻿using GoldenDates.Models;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -30,15 +34,15 @@ namespace GoldenDates
         {
             await Navigation.PushAsync(new AddItem());
         }
-        public async void btnEditarItem_Clicked(object sender, EventArgs e)
-        {
-            App.MasterD.IsPresented = false;
-            await App.MasterD.Detail.Navigation.PushAsync(new EditItem());
-        }
-        public async void btnEliminarItem_Clicked(object sender, EventArgs e)
-        {
-            App.MasterD.IsPresented = false;
-            await App.MasterD.Detail.Navigation.PushAsync(new DeleteItem());
-        }
+        ////public async void btnEditarItem_Clicked(object sender, EventArgs e)
+        ////{
+        ////    App.MasterD.IsPresented = false;
+        ////    await App.MasterD.Detail.Navigation.PushAsync(new EditItem());
+        ////}
+        ////public async void btnEliminarItem_Clicked(object sender, EventArgs e)
+        ////{
+        ////    App.MasterD.IsPresented = false;
+        ////    await App.MasterD.Detail.Navigation.PushAsync(new DeleteItem());
+        ////}
     }
 }

@@ -4,7 +4,6 @@
              x:Class="GoldenDates.AddItem">
    
         <StackLayout>
-        <Image Source="GD.png" HeightRequest="120" WidthRequest="120" FlexLayout.AlignSelf="Center" BackgroundColor="Transparent" />
         <Label Text="Registro de Articulos" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" FontSize="Title"/>
             <Label Text="Ingresa la información del articulo" FontAttributes="Bold" FontSize="Medium" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"/>
 
@@ -21,6 +20,7 @@
            
 
             <Button Text="Agregar PRODUCTO" x:Name="btnAddItem" Clicked="btnAddItem_Clicked" BackgroundColor="Beige"></Button>
+        <Image Source="GD.png" HeightRequest="100" WidthRequest="100" FlexLayout.AlignSelf="Center" BackgroundColor="Transparent" />
 
-        </StackLayout>
+    </StackLayout>
 </ContentPage>

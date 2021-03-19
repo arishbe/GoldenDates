@@ -4,9 +4,45 @@
              x:Class="GoldenDates.ListClient">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="LISTA DE CLIENTES" FontAttributes="Bold"
+                   Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" HorizontalTextAlignment="Center" FontSize="Title"/>
+
+            <ListView 
+            x:Name="lvClient"
+            HasUnevenRows="True"
+                ItemTapped="lvClient_ItemTapped"
+                SelectedItem="{Binding}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="10">
+                                <Label
+                                Text= "{ Binding id_cli}">
+                                </Label>
+                                <Label
+                                Text="{Binding nombre}">
+                                </Label>
+                                <Label
+                                Text="{Binding apellido}">
+                                </Label>
+                                <Label
+                                Text="{Binding telefono}">
+                                </Label>
+                                <Label
+                                Text="{Binding direccion}">
+                                </Label>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Button
+            x:Name="btnAgregarClienteCli"
+            Clicked="btnAgregarClienteCli_Clicked"
+            Text="Agregar"
+                WidthRequest="100">
+            </Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -9,7 +9,7 @@ namespace GoldenDates
     public partial class EditUser : ContentPage
     {
         Api _api;
-        public EditUser()
+        public EditUser(ClientResponse selectedItem)
         {
             InitializeComponent();
             _api = new Api();
